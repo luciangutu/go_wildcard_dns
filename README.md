@@ -11,7 +11,7 @@ A simple wildcard DNS server written in Go. This server responds with a configur
 ### Prerequisites
 
 - Docker
-- Go (for building from source)
+- Go
 
 ### Build the container
 
@@ -21,8 +21,10 @@ docker build -t wildcard-dns-server .
 
 ### Run the server
 
-Run the container with the desired IP address for A records
-Replace `192.168.100.1` with the IP address you want to use for A records.
+Run the container with the desired IP address for A records.
+
+Replace `192.168.100.1` with the IP address you want the server to respond with for A records.
+
 The DNS server will listen on port 53 for UDP queries and respond with the specified IP address for any query.
 
 ```shell
